@@ -2,11 +2,11 @@ view: records {
   sql_table_name: ValidationSwiss.Records ;;
 
   dimension: bool_tick {
-    sql: ('http://localhost:9999/images/clareti/bool_tick.gif')
+    sql: ('http://localhost:9999/images/clareti/bool_tick.gif') ;;
   }
 
   dimension: bool_cross {
-    sql: ('http://localhost:9999/images/clareti/bool_cross.gif')
+    sql: ('http://localhost:9999/images/clareti/bool_cross.gif') ;;
   }
 
   dimension: active_status {
@@ -18,10 +18,9 @@ view: records {
   #  type: string
   #  sql: ${TABLE}.ALL_Okay ;;
   #}
-
   dimension: all_okay {
-    sql: ${bool_tick}
-    html: <img src="{{ all_okay }}"/>
+    sql: case when ${TABLE}.all_okay then 'http://localhost:9999/images/clareti/bool_cross.gif' else 'http://localhost:9999/images/clareti/bool_tick.gif' end ;;
+    #html: <img src="{{ value }}" />
   }
 
   dimension: all_okay_display {
