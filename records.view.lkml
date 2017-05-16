@@ -438,7 +438,7 @@ view: records {
     view_label: "Date Updated"
     label: "Date Updated"
     type: string
-    sql: case when ${TABLE}.update_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    sql: case when ${TABLE}.update_date_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}}/> {{records.update._value}};;
   }
 
