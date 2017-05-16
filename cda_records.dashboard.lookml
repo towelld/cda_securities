@@ -14,6 +14,12 @@
     tile_text_color: "#646569"
 
   filters:
+  - name: all_okay_display
+    label: 'Okay?'
+    type: field_filter
+    model: cda_securities
+    explore: records
+    field: records.all_okay_display
   - name: security_type
     label: 'Security Type'
     type: field_filter
@@ -32,12 +38,6 @@
     model: cda_securities
     explore: records
     field: records.data_approved
-  - name: all_okay_display
-    label: 'Okay?'
-    type: field_filter
-    model: cda_securities
-    explore: records
-    field: records.all_okay_display
 
   elements:
   - name: cda_securities_records
@@ -50,10 +50,10 @@
       records.currency_okay, records.country_exchange, records.country_exchange_okay,
       records.data_approved, records.data_approved_okay, records.update_date_okay, records.update_date]
     listen:
+      all_okay_display: records.all_okay_display
       security_type: records.security_type
       country_exchange: records.country_exchange
       data_approved: records.data_approved
-      all_okay_display: records.all_okay_display
     sorts: [records.sec_name]
     limit: '500'
     column_limit: '50'
