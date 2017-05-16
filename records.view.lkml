@@ -14,9 +14,14 @@ view: records {
     sql: ${TABLE}.ActiveStatus ;;
   }
 
+  #dimension: all_okay {
+  #  type: string
+  #  sql: ${TABLE}.ALL_Okay ;;
+  #}
+
   dimension: all_okay {
-    type: string
-    sql: ${TABLE}.ALL_Okay ;;
+    sql: ${bool_tick}
+    html: <img src="{{ bool_tick }}"/>
   }
 
   dimension: all_okay_display {
