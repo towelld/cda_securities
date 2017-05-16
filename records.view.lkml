@@ -21,7 +21,7 @@ view: records {
 
   dimension: all_okay {
     sql: ${bool_tick}
-    html: <img src="{{ bool_tick }}"/>
+    html: <img src="{{ all_okay }}"/>
   }
 
   dimension: all_okay_display {
