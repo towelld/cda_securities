@@ -45,10 +45,7 @@
     type: table
     model: cda_securities
     explore: records
-    dimensions: [records.all_okay, records.isin, records.isin_okay, records.sec_name,
-      records.sec_name_okay, records.security_type, records.security_type_okay, records.currency,
-      records.currency_okay, records.country_exchange_display, records.country_exchange_okay,
-      records.data_approved, records.data_approved_okay, records.update_date_okay, records.update_date]
+    dimensions: [records.all_okay, records.isin_display, records.sec_name_display, records.security_type_display, records.currency_display, records.country_exchange_display, records.data_approved_display, records.update_display]
     listen:
       all_okay_display: records.all_okay_display
       security_type: records.security_type
