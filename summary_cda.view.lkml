@@ -85,10 +85,7 @@ view: summary_cda {
     drill_fields: [records*]
   }
   set: records {
-    fields: [records.int_boajcd,records.int_boafcd,records.int_boakcd,records.int_boexst,records.int_bojdtx,records.int_boabcd,records.int_bocnnb,records.int_bocfc2,records.int_boernr,records.int_a7a8st,records.int_a7ammd,records.int_bpbbmd,records.int_loq4ns,records.int_swjpmd,records.int_swjqmd,records.int_swjrmd,records.int_swunn1]
-  }
-  set: checks {
-    fields: [records.int_bojdtx_complete,records.int_bojdtx_conform,records.int_bojdtx_unique,records.int_bojdtx_valid]
+    fields: [records.isin_display,records.sec_name_display,records.security_type_display,records.currency_display,records.country_exchange_display,records.data_approved_display,records.update_display]
   }
 
 }
