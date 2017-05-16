@@ -60,7 +60,7 @@
     truncate_column_names: false
     hide_totals: false
     hide_row_totals: false
-    table_theme: transparent
+    table_theme: gray
     limit_displayed_rows: false
     enable_conditional_formatting: false
     conditional_formatting_ignored_fields: []
