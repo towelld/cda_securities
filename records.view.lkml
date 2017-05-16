@@ -17,6 +17,7 @@ view: records {
 
   dimension: all_okay_display {
     type: string
+    view_label: "Okay?"
     sql: ${TABLE}.ALL_Okay_DISPLAY ;;
   }
 
@@ -56,6 +57,7 @@ view: records {
   }
 
   dimension: country_exchange_okay {
+    view_label: "Okay?"
     sql: case when ${TABLE}.country_exchange_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}} /> ;;
   }
@@ -96,6 +98,7 @@ view: records {
   }
 
   dimension: currency_okay {
+    view_label: "Okay?"
     sql: case when ${TABLE}.currency_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}} /> ;;
   }
@@ -136,6 +139,7 @@ view: records {
   }
 
   dimension: data_approved_okay {
+    view_label: "Okay?"
     sql: case when ${TABLE}.data_approved_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}} /> ;;
   }
@@ -196,6 +200,7 @@ view: records {
   }
 
   dimension: isin_okay {
+    view_label: "Okay?"
     sql: case when ${TABLE}.isin_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}} /> ;;
   }
@@ -271,6 +276,7 @@ view: records {
   }
 
   dimension: sec_name_okay {
+    view_label: "Okay?"
     sql: case when ${TABLE}.sec_name_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}} /> ;;
   }
@@ -311,6 +317,7 @@ view: records {
   }
 
   dimension: security_type_okay {
+    view_label: "Okay?"
     sql: case when ${TABLE}.security_type_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}} /> ;;
   }
@@ -394,6 +401,7 @@ view: records {
   }
 
   dimension: update_date_okay {
+    view_label: "Okay?"
     sql: case when ${TABLE}.update_date_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}} /> ;;
   }
