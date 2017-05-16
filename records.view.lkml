@@ -439,7 +439,7 @@ view: records {
     label: "Date Updated"
     type: string
     sql: case when ${TABLE}.update_date_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
-    html: <img src={{rendered_value}}/> {{records.update._value}};;
+    html: <img src={{rendered_value}}/> {{records.update_date._value}};;
   }
 
   dimension: update_date_check {
