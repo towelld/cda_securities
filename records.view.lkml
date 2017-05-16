@@ -45,7 +45,7 @@ view: records {
   dimension: country_exchange {
     type: string
     sql: case when ${TABLE}.country_exchange_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
-    html: <img src={{rendered_value}} {{value}} /> ;;
+    html: <img src={{rendered_value}}/>  {{value}};;
   }
 
   dimension: country_exchange_check {
