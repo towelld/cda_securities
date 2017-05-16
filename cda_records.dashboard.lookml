@@ -47,7 +47,7 @@
     explore: records
     dimensions: [records.all_okay, records.isin, records.isin_okay, records.sec_name,
       records.sec_name_okay, records.security_type, records.security_type_okay, records.currency,
-      records.currency_okay, records.country_exchange, records.country_exchange_okay,
+      records.currency_okay, records.country_exchange_display, records.country_exchange_okay,
       records.data_approved, records.data_approved_okay, records.update_date_okay, records.update_date]
     listen:
       all_okay_display: records.all_okay_display
