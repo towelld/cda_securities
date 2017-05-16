@@ -1,6 +1,14 @@
 view: records {
   sql_table_name: ValidationSwiss.Records ;;
 
+  dimension: bool_tick {
+    sql: ('http://localhost:9999/images/clareti/bool_tick.gif')
+  }
+
+  dimension: bool_cross {
+    sql: ('http://localhost:9999/images/clareti/bool_cross.gif')
+  }
+
   dimension: active_status {
     type: number
     sql: ${TABLE}.ActiveStatus ;;
