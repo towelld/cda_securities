@@ -67,7 +67,7 @@
       left: 17
       top: 0
       height: 10
-      width: 15
+      width: 10
       type: looker_bar
       model: cda_securities
       explore: summary_cda
