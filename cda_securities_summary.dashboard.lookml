@@ -1,4 +1,4 @@
-- dashboard: cda_securities_summary_test
+- dashboard: cda_securities_summary
   title: Securities Summary
   layout: static
   width: 2310
