@@ -3,7 +3,7 @@
   layout: grid
   rows:
   - elements: [cda_securities_records]
-  height: 1000
+    height: 1000
   auto_run: true
   embed_style:
     background_color: "#ffffff"
