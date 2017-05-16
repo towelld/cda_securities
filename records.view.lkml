@@ -20,7 +20,7 @@ view: records {
   #}
   dimension: all_okay {
     sql: case when ${TABLE}.all_okay = 0 then 'http://localhost:9999/images/clareti/bool_cross.gif' else 'http://localhost:9999/images/clareti/bool_tick.gif' end ;;
-    #html: <img src="{{ value }}" />
+    html: <img src={{rendered_value}} /> ;;
   }
 
   dimension: all_okay_display {
