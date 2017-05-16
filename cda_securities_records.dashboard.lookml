@@ -1,5 +1,5 @@
 - dashboard: cda_securities_records
-  title: Securities
+  title: Securities Records
   layout: grid
   rows:
   - elements: [cda_securities_records]

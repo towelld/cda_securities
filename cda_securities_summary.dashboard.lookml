@@ -18,7 +18,7 @@
       title: Completeness
       left: 2
       top: 0
-      height: 85
+      height: 10
       width: 15
       type: looker_bar
       model: cda_securities
@@ -66,7 +66,7 @@
       title: Timeliness
       left: 17
       top: 0
-      height: 85
+      height: 10
       width: 15
       type: looker_bar
       model: cda_securities
