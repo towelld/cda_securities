@@ -1,4 +1,4 @@
-- dashboard: cda_records
+- dashboard: cda_securities_records
   title: Securities
   layout: grid
   rows:
