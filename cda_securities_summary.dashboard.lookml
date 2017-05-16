@@ -93,7 +93,7 @@
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
       show_x_axis_label: false
-      show_x_axis_ticks: true
+      show_x_axis_ticks: false
       x_axis_scale: auto
       y_axis_scale_mode: linear
       ordering: none
