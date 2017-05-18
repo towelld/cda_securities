@@ -100,7 +100,7 @@ explore: data_tolerances {
 #       relationship: many_to_one
 
 
-# - explore: files
+explore: files {}
 
 # - explore: group_history
 
