@@ -142,6 +142,15 @@ explore: v_cdatolerances {
   }
 }
 
+explore: v_cdahighlights_summary {}
+
+explore: v_cdahighlights_rags {
+  join: data_elements {
+    sql_on: ${data_elements.element_id} = ${v_cdahighlights_rags.element_id} ;;
+    relationship: one_to_one
+  }
+}
+
 explore: summary_cda_tolerance {}
 
 explore: summary_cda {
