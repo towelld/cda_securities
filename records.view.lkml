@@ -47,7 +47,7 @@ view: records {
     label: "Country/Exchange"
     type: string
     sql: case when ${TABLE}.country_exchange_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
-    html: <img src={{rendered_value}}/> {{records.country_exchange._value}};;
+    html: {{records.country_exchange._value}} <img src={{rendered_value}}/>;;
   }
 
   dimension: country_exchange_check {
@@ -94,7 +94,7 @@ view: records {
     label: "Currency"
     type: string
     sql: case when ${TABLE}.currency_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
-    html: <img src={{rendered_value}}/> {{records.currency._value}};;
+    html: {{records.currency._value}} <img src={{rendered_value}}/>;;
   }
 
   dimension: currency_check {
@@ -141,7 +141,7 @@ view: records {
     label: "Data Approved"
     type: string
     sql: case when ${TABLE}.data_approved_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
-    html: <img src={{rendered_value}}/> {{records.data_approved._value}};;
+    html: {{records.data_approved._value}} <img src={{rendered_value}}/>;;
   }
 
   dimension: data_approved_check {
@@ -208,7 +208,7 @@ view: records {
     label: "ISIN"
     type: string
     sql: case when ${TABLE}.isin_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
-    html: <img src={{rendered_value}}/> {{records.isin._value}};;
+    html: {{records.isin._value}} <img src={{rendered_value}}/>;;
   }
 
   dimension: isin_check {
@@ -290,7 +290,7 @@ view: records {
     label: "Security Name"
     type: string
     sql: case when ${TABLE}.sec_name_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
-    html: <img src={{rendered_value}}/> {{records.sec_name._value}};;
+    html: {{records.sec_name._value}} <img src={{rendered_value}}/>;;
   }
 
   dimension: sec_name_check {
@@ -337,7 +337,7 @@ view: records {
     label: "Security Type"
     type: string
     sql: case when ${TABLE}.security_type_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
-    html: <img src={{rendered_value}}/> {{records.security_type._value}};;
+    html: {{records.security_type._value}} <img src={{rendered_value}}/> ;;
   }
 
   dimension: security_type_check {
@@ -427,7 +427,7 @@ view: records {
     label: "Date Updated"
     type: string
     sql: case when ${TABLE}.update_date_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
-    html: {{records.update_date._value}}<img src={{rendered_value}}/>;;
+    html: {{records.update_date._value}} <img src={{rendered_value}}/>;;
   }
 
   dimension: update_date_check {
