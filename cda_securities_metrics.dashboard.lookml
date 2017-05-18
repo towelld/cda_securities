@@ -1,5 +1,5 @@
 - dashboard: cda_securities_metrics
-  title: ICE Metrics
+  title: Securities Metrics
   layout: grid
   rows:
     - elements: [cda_securities_records_chart]
@@ -7,7 +7,7 @@
     - elements: [cda_securities_records_detail]
       height: 150
     - elements: [cda_securities_rule_count]
-      height: 3000
+      height: 300
   embed_style:
     background_color: "#ffffff"
     show_title: true
