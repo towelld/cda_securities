@@ -1,5 +1,5 @@
 view: v_cdatolerances {
-  sql_table_name: DemoIce.vCDATolerances ;;
+  sql_table_name: ValidationSwiss.vCDATolerances ;;
 
   dimension: element_id {
     type: number
