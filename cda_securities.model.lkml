@@ -135,9 +135,12 @@ explore: files {}
 # - explore: summary
 
 # - explore: user_audit
-
-# - explore: v_summary
-
+explore: v_cdatolerances {
+  join: data_elements {
+    sql_on: ${data_elements.element_id} = ${v_cdatolerances.element_id} ;;
+    relationship: one_to_many
+  }
+}
 
 explore: summary_cda_tolerance {}
 
