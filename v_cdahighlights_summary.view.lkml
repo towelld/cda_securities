@@ -25,4 +25,11 @@ view: v_cdahighlights_summary {
     type: count
     drill_fields: []
   }
+
+  measure: sum_rag_count {
+    type: sum
+    sql: ${rag_count};;
+    label: "Count"
+  }
+
 }
