@@ -8,7 +8,7 @@
     background_color: "#ffffff"
     show_title: true
     title_color: "#646569"
-    show_filters_bar: false
+    show_filters_bar: true
     tile_background_color: "#ffffff"
     tile_text_color: "#646569"
 
