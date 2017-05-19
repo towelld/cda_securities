@@ -1,8 +1,8 @@
 - dashboard: cda_securities_summary
   title: Securities Summary
   layout: static
-  width: 1680
-  tile_size: 21
+  width: 1540
+  tile_size: 20
   auto_run: true
   embed_style:
     background_color: "#ffffff"
