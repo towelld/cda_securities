@@ -52,7 +52,8 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
-    series_colors: "#646569"
+    series_colors:
+      Swiss_day_1.csv - Files Sum Records: "#646569"
 
 
   - name: cda_securities_records_detail
