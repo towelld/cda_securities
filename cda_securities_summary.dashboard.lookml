@@ -38,7 +38,7 @@
       title: Completeness
       left: 2
       top: 0
-      height: 10
+      height: 15
       width: 15
       type: looker_bar
       model: cda_securities
@@ -90,7 +90,7 @@
       title: Timeliness
       left: 17
       top: 0
-      height: 10
+      height: 15
       width: 10
       type: looker_bar
       model: cda_securities
@@ -142,7 +142,7 @@
       title: Accuracy
       left: 27
       top: 0
-      height: 10
+      height: 15
       width: 10
       type: looker_bar
       model: cda_securities
@@ -194,7 +194,7 @@
       title: Conformity
       left: 37
       top: 0
-      height: 10
+      height: 15
       width: 10
       type: looker_bar
       model: cda_securities
@@ -246,7 +246,7 @@
       title: Validity
       left: 47
       top: 0
-      height: 10
+      height: 15
       width: 10
       type: looker_bar
       model: cda_securities
@@ -298,7 +298,7 @@
       title: Consistency
       left: 57
       top: 0
-      height: 10
+      height: 15
       width: 10
       type: looker_bar
       model: cda_securities
@@ -350,7 +350,7 @@
       title: Uniqueness
       left: 67
       top: 0
-      height: 10
+      height: 15
       width: 10
       type: looker_bar
       model: cda_securities
