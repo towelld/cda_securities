@@ -170,4 +170,8 @@ explore: summary_cda {
     sql_on: ${summary_cda_tolerance.rule_type_id} = ${summary_cda.rule_type_id} and ${summary_cda_tolerance.element_id} = ${summary_cda.element_id} ;;
     relationship: one_to_one
   }
+  join: data_elements_rule_types  {
+    sql_on: ${data_elements_rule_types.rule_type_id} = ${summary_cda.rule_type_id} ;;
+    relationship: one_to_one
+  }
 }
