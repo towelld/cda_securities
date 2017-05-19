@@ -46,6 +46,19 @@ view: summary_cda {
     sql: ${TABLE}.total ;;
   }
 
+  dimension: security_type {
+    type: string
+    sql: ${TABLE}.security_type ;;
+  }
+  dimension: country_exchange {
+    type: string
+    sql: ${TABLE}.country_exchange ;;
+  }
+  dimension: data_approved {
+    type: string
+    sql: ${TABLE}.data_approved ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [records*]

@@ -12,6 +12,26 @@
     tile_background_color: "#ffffff"
     tile_text_color: "#646569"
 
+  filters:
+    - name: security_type
+      label: 'Security Type'
+      type: field_filter
+      model: cda_securities
+      explore: summary_cda
+      field: summary_cda.security_type
+    - name: country_exchange
+      label: 'Country Exchange'
+      type: field_filter
+      model: cda_securities
+      explore: summary_cda
+      field: summary_cda.country_exchange
+    - name: data_approved
+      label: 'Data Approved'
+      type: field_filter
+      model: cda_securities
+      explore: summary_cda
+      field: summary_cda.data_approved
+
   elements:
 
     - name: cda_securities_summary_complete
@@ -27,6 +47,10 @@
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
         summary_cda.rule_type_id: '1'
+      listen:
+        security_type: summary_cda.security_type
+        country_exchange: summary_cda.country_exchange
+        data_approved: summary_cda.data_approved
       sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
@@ -75,6 +99,10 @@
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
         summary_cda.rule_type_id: '6'
+      listen:
+        security_type: summary_cda.security_type
+        country_exchange: summary_cda.country_exchange
+        data_approved: summary_cda.data_approved
       sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
@@ -123,6 +151,10 @@
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
         summary_cda.rule_type_id: '11'
+      listen:
+        security_type: summary_cda.security_type
+        country_exchange: summary_cda.country_exchange
+        data_approved: summary_cda.data_approved
       sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
@@ -171,6 +203,10 @@
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
         summary_cda.rule_type_id: '2'
+      listen:
+        security_type: summary_cda.security_type
+        country_exchange: summary_cda.country_exchange
+        data_approved: summary_cda.data_approved
       sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
@@ -219,6 +255,10 @@
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
         summary_cda.rule_type_id: '3'
+      listen:
+        security_type: summary_cda.security_type
+        country_exchange: summary_cda.country_exchange
+        data_approved: summary_cda.data_approved
       sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
@@ -267,6 +307,10 @@
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
         summary_cda.rule_type_id: '4'
+      listen:
+        security_type: summary_cda.security_type
+        country_exchange: summary_cda.country_exchange
+        data_approved: summary_cda.data_approved
       sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
@@ -315,6 +359,10 @@
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
         summary_cda.rule_type_id: '5'
+      listen:
+        security_type: summary_cda.security_type
+        country_exchange: summary_cda.country_exchange
+        data_approved: summary_cda.data_approved
       sorts: [summary_cda.sort_order]
       limit: '500'
       column_limit: '50'
