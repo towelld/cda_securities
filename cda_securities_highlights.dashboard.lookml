@@ -21,27 +21,25 @@
 
   elements:
 
-  - name: cda_securities_highlights_complete
-    title: Complete
-    type: looker_pie
+  - name: cda_securities_highlights
+    title: Highlights
     left: 0
     top: 0
     height: 5
-    width: 10
+    width: 30
+    type: looker_donut_multiples
     model: cda_securities
-    explore: v_cdahighlights_summary
-    dimensions: [v_cdahighlights_summary.rag]
-    measures: [v_cdahighlights_summary.sum_rag_count]
-    filters:
-      v_cdahighlights_summary.rule_type: Complete
-    sorts: [v_cdahighlights_summary.sum_rag_count desc]
+    explore: summary_cda
+    dimensions: [data_elements_rule_types.rule_type]
+    measures: [summary_cda.passed, summary_cda.failed]
+    filter_expression: "${summary_cda.rule_type_id}=1 OR ${summary_cda.rule_type_id}=6 OR ${summary_cda.rule_type_id}=11"
+    sorts: [summary_cda.passed desc]
     limit: '500'
     column_limit: '50'
     query_timezone: Europe/London
-    value_labels: none
-    label_type: labPer
-    stacking: ''
     show_value_labels: false
+    font_size: 25
+    stacking: ''
     label_density: 25
     legend_position: center
     x_axis_gridlines: false
@@ -63,104 +61,15 @@
     show_silhouette: false
     totals_color: "#808080"
     series_types: {}
+    hide_legend: true
     series_colors:
-      GREEN: "#92c26e"
-      RED: "#df5555"
-      AMBER: "#eaa153"
+      summary_cda.passed: "#92c26e"
+      summary_cda.failed: "#df5555"
+    charts_across: 3
+    series_labels:
+      summary_cda.passed: Passed
+      summary_cda.failed: Failed
 
-  - name: cda_securities_highlights_timely
-    title: Timely
-    type: looker_pie
-    left: 10
-    top: 0
-    height: 5
-    width: 10
-    model: cda_securities
-    explore: v_cdahighlights_summary
-    dimensions: [v_cdahighlights_summary.rag]
-    measures: [v_cdahighlights_summary.sum_rag_count]
-    filters:
-      v_cdahighlights_summary.rule_type: Timely
-    sorts: [v_cdahighlights_summary.sum_rag_count desc]
-    limit: '500'
-    column_limit: '50'
-    query_timezone: Europe/London
-    value_labels: none
-    label_type: labPer
-    stacking: ''
-    show_value_labels: false
-    label_density: 25
-    legend_position: center
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_view_names: true
-    limit_displayed_rows: false
-    y_axis_combined: true
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    x_axis_scale: auto
-    y_axis_scale_mode: linear
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: "#808080"
-    series_types: {}
-    series_colors:
-      GREEN: "#92c26e"
-      RED: "#df5555"
-      AMBER: "#eaa153"
-
-  - name: cda_securities_highlights_accurate
-    title: Accurate
-    type: looker_pie
-    left: 20
-    top: 0
-    height: 5
-    width: 10
-    model: cda_securities
-    explore: v_cdahighlights_summary
-    dimensions: [v_cdahighlights_summary.rag]
-    measures: [v_cdahighlights_summary.sum_rag_count]
-    filters:
-      v_cdahighlights_summary.rule_type: Accurate
-    sorts: [v_cdahighlights_summary.sum_rag_count desc]
-    limit: '500'
-    column_limit: '50'
-    query_timezone: Europe/London
-    value_labels: none
-    label_type: labPer
-    stacking: ''
-    show_value_labels: false
-    label_density: 25
-    legend_position: center
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_view_names: true
-    limit_displayed_rows: false
-    y_axis_combined: true
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    x_axis_scale: auto
-    y_axis_scale_mode: linear
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: "#808080"
-    series_types: {}
-    series_colors:
-      GREEN: "#92c26e"
-      RED: "#df5555"
-      AMBER: "#eaa153"
 
   - name: cda_securities_highlights_green
     title: Untitled Visualization
