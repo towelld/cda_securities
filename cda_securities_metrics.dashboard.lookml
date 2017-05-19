@@ -52,10 +52,8 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
-    series_colors:
-      ICE_20170218151929.txt - Files Sum Records: "#fa8d29"
-      INT_20170218153900.txt - Files Sum Records: "#646569"
-      MICS_20170218153900.txt - Files Sum Records: "#646569"
+    series_colors: "#646569"
+
 
   - name: cda_securities_records_detail
     title: Records Loaded Detail
