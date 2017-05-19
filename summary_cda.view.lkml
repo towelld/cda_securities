@@ -97,6 +97,20 @@ view: summary_cda {
     value_format_name: percent_2
     drill_fields: [records*]
   }
+  measure: failed {
+    type: number
+    view_label: "Failed"
+    sql: 1-(${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0)  ;;
+    value_format_name: percent_2
+    drill_fields: [records*]
+  }
+  measure: passed {
+    type: number
+    view_label: "Passed"
+    sql: (${summary_cda.sum_rule}*1.0/${summary_cda.sum_total}*1.0)  ;;
+    value_format_name: percent_2
+    drill_fields: [records*]
+  }
   set: records {
     fields: [records.isin_display,records.sec_name_display,records.security_type_display,records.currency_display,records.country_exchange_display,records.data_approved_display,records.update_display]
   }
