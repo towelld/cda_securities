@@ -1,8 +1,8 @@
 - dashboard: cda_securities_highlights
   title: Securities Highlights
   layout: static
-  width: 2250
-  tile_size: 75
+  width: 1500
+  tile_size: 50
   auto_run: true
   embed_style:
     background_color: "#ffffff"
