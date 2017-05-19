@@ -43,7 +43,7 @@
       type: looker_bar
       model: cda_securities
       explore: summary_cda
-      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper,summary_cda.security_type,summary_cda.country_exchange,summary_cda.data_approved]
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
         summary_cda.rule_type_id: '1'
@@ -78,7 +78,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper,summary_cda.security_type,summary_cda.country_exchange,summary_cda.data_approved]
+      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper]
       series_colors:
         summary_cda.red: "#df5555"
         summary_cda.amber: "#eaa153"
