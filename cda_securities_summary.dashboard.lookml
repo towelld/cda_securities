@@ -31,6 +31,12 @@
       model: cda_securities
       explore: summary_cda
       field: summary_cda.data_approved
+    - name: feature_description
+      label: 'Feature'
+      type: field_filter
+      model: cda_securities
+      explore: data_elements
+      field: data_elements.feature_description
 
   elements:
 
