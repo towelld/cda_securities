@@ -112,7 +112,7 @@ view: summary_cda {
     drill_fields: [records*]
   }
   set: records {
-    fields: [records.isin_display,records.sec_name_display,records.security_type_display,records.currency_display,records.country_exchange_display,records.data_approved_display,records.update_display]
+    fields: [records.isin_okay,records.isin,records.sec_name_okay,records.sec_name,records.security_type_okay,records.security_type,records.currency_okay,records.currency,records.country_exchange_okay,records.country_exchange,records.data_approved_okay,records.data_approved,records.update_okay,records.update_date]
   }
 
 }

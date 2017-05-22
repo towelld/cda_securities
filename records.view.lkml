@@ -66,9 +66,12 @@ view: records {
   }
 
   dimension: country_exchange_okay {
+    view_label: "OK"
+    label: "OK"
     type: string
-    sql: ${TABLE}.COUNTRY_EXCHANGE_Okay ;;
-    }
+    sql: case when ${TABLE}.country_exchange_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/>;;
+  }
 
   dimension: country_exchange_timely {
     type: string
@@ -113,9 +116,12 @@ view: records {
   }
 
   dimension: currency_okay {
+    view_label: "OK"
+    label: "OK"
     type: string
-    sql: ${TABLE}.CURRENCY_Okay ;;
-    }
+    sql: case when ${TABLE}.currency_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> ;;
+  }
 
   dimension: currency_timely {
     type: string
@@ -160,9 +166,12 @@ view: records {
   }
 
   dimension: data_approved_okay {
+    view_label: "OK"
+    label: "OK"
     type: string
-    sql: ${TABLE}.DATA_APPROVED_Okay ;;
-    }
+    sql: case when ${TABLE}.data_approved_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/>;;
+  }
 
   dimension: data_approved_timely {
     type: string
@@ -227,9 +236,12 @@ view: records {
   }
 
   dimension: isin_okay {
+    view_label: "OK"
+    label: "OK"
     type: string
-    sql: ${TABLE}.ISIN_Okay ;;
-    }
+    sql: case when ${TABLE}.isin_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/>;;
+  }
 
   dimension: isin_timely {
     type: string
@@ -309,9 +321,12 @@ view: records {
   }
 
   dimension: sec_name_okay {
+    view_label: "OK"
+    label: "OK"
     type: string
-    sql: ${TABLE}.SEC_NAME_Okay ;;
-    }
+    sql: case when ${TABLE}.sec_name_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/>;;
+  }
 
   dimension: sec_name_timely {
     type: string
@@ -356,9 +371,12 @@ view: records {
   }
 
   dimension: security_type_okay {
+    view_label: "OK"
+    label: "OK"
     type: string
-    sql: ${TABLE}.SECURITY_TYPE_Okay ;;
-    }
+    sql: case when ${TABLE}.security_type_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/>;;
+  }
 
   dimension: security_type_timely {
     type: string
@@ -446,9 +464,12 @@ view: records {
   }
 
   dimension: update_date_okay {
+    view_label: "OK"
+    label: "OK"
     type: string
-    sql: ${TABLE}.UPDATE_DATE_Okay ;;
-    }
+    sql: case when ${TABLE}.update_date_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> ;;
+  }
 
   dimension: update_date_timely {
     type: string
