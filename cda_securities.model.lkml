@@ -154,6 +154,7 @@ explore: v_cdahighlights_rags {
 explore: summary_cda_tolerance {}
 
 explore: summary_cda {
+  persist_for: "5 minutes"
   join: summary_cda_record_link {
     sql_on: ${summary_cda_record_link.summary_pk} = ${summary_cda.pk} ;;
     relationship: many_to_many
