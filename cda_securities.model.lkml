@@ -6,7 +6,9 @@ include: "*.view"
 # include all the dashboards
 include: "*.dashboard"
 
-explore: records {}
+explore: records {
+  persist_for: "5 minutes"
+}
 
 # - explore: assigned_role
 
