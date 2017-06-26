@@ -9,6 +9,10 @@ view: data_elements {
   dimension: feature_description {
     type: string
     sql: ${TABLE}.feature_description ;;
+    link: {
+      label: "Tolerances"
+      url: "http://localhost:9999/embed/dashboards/cda_securities::cda_securities_tolerances?feature_description={{ value }}"
+    }
   }
 
   dimension: feature_name {
