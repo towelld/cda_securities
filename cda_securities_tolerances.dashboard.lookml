@@ -18,6 +18,11 @@
     model: cda_securities
     explore: data_elements
     field: data_elements.feature_description
+  - name: rule_type
+    type: field_filter
+    model: cda_securities
+    explore: v_cdatolerances
+    field: v_cdatolerances.rule_type
 
   elements:
 
@@ -31,6 +36,7 @@
       v_cdatolerances.amber, v_cdatolerances.red, v_cdatolerances.rag_date, v_cdatolerances.rag_comments]
     listen:
       feature_description: data_elements.feature_description
+      rule_type: v_cdatolerances.rule_type
     sorts: [data_elements.feature_description, v_cdatolerances.sort_order]
     limit: '1200'
     column_limit: '50'
