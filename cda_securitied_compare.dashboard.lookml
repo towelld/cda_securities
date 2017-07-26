@@ -28,6 +28,7 @@
       summary_cda.country_exchange: ''
       summary_cda.data_approved: ''
       summary_cda.security_type: ''
+    show_filters_bar: true
     limit: '500'
     column_limit: '50'
     query_timezone: America/Los_Angeles
