@@ -70,7 +70,7 @@
     column_limit: '50'
     query_timezone: America/Los_Angeles
     stacking: normal
-    show_value_labels: false
+    show_value_labels: true
     label_density: 25
     legend_position: center
     x_axis_gridlines: false
@@ -95,7 +95,7 @@
     series_colors:
       summary_cda.passed: "#92c26e"
       summary_cda.failed: "#df5555"
-
+    label_color: ["#000000"]
 
   - name: cda_securities_compare_source_2
     title: Source 2
@@ -115,7 +115,7 @@
     column_limit: '50'
     query_timezone: America/Los_Angeles
     stacking: normal
-    show_value_labels: false
+    show_value_labels: true
     label_density: 25
     legend_position: center
     x_axis_gridlines: false
@@ -140,3 +140,4 @@
     series_colors:
       summary_cda.passed: "#92c26e"
       summary_cda.failed: "#df5555"
+    label_color: ["#000000"]
