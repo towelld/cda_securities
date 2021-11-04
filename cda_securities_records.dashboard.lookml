@@ -42,7 +42,7 @@
   elements:
   - name: cda_securities_records
     title: Securities
-    type: table
+    type: looker_grid
     model: cda_securities
     explore: records
     dimensions: [records.all_okay, records.isin_display, records.sec_name_display, records.security_type_display, records.currency_display, records.country_exchange_display, records.data_approved_display, records.update_display]
