@@ -58,7 +58,7 @@
 
   - name: cda_securities_records_detail
     title: Records Loaded Detail
-    type: table
+    type: looker_grid
     model: cda_securities
     explore: files
     dimensions: [files.file_name, files.records_loaded, files.file_time_stamp, files.load_time_stamp]

@@ -82,7 +82,7 @@
 
   - name: cda_securities_business_rules
     title: Business Rules
-    type: table
+    type: looker_grid
     model: cda_securities
     explore: data_elements_rules
     dimensions: [data_elements.feature_name, data_elements.feature_description, data_elements_rule_types.rule_type, data_elements_rules.rule_description]
